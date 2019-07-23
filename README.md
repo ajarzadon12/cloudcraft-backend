@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
 
-Things you may want to cover:
+This application currently works with:
 
-* Ruby version
+* Rails 5.2.2
+* MongoDB
 
-* System dependencies
+## Initial Setup
+```
+git clone https://github.com/ajarzadon12/cloudcraft-backend.git
+cd cloudcraft-backend
+bundle install
 
-* Configuration
+```
 
-* Database creation
+## Usage
 
-* Database initialization
+Start mongo server
+```
+[macOs] brew services start mongodb-community@4.0
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run the server:
+```
+rails server -p 4000
+```
